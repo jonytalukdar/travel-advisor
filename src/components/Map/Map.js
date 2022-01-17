@@ -10,7 +10,7 @@ import useStyles from './MapStyles';
 const Map = () => {
   const classes = useStyles();
   const isMobile = useMediaQuery(`(min-width: 600px)`);
-  const coordinates = { lat: 0, lng: 0 };
+  const coordinates = { lat: 23.685, lng: 90.3563 };
 
   return (
     <div className={classes.mapContainer}>
