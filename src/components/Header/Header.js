@@ -4,7 +4,7 @@ import { Autocomplete } from '@react-google-maps/api';
 import { AppBar, Toolbar, InputBase, Box, Typography } from '@material-ui/core';
 import { Search } from '@material-ui/icons';
 
-import useStyles from './styles';
+import useStyles from './HeaderStyles';
 
 const Header = () => {
   const classes = useStyles();
