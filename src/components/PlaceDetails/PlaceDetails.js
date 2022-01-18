@@ -10,6 +10,7 @@ import {
   CardActions,
 } from '@material-ui/core';
 import { LocationOnOutlined, Phone } from '@material-ui/icons';
+import { Rating } from '@material-ui/lab';
 
 import useStyles from './PlaceDetailsStyles.js';
 
@@ -31,6 +32,12 @@ const PlaceDetails = ({ place }) => {
         <Typography gutterBottom variant="h5">
           {place.name}
         </Typography>
+        <Box display="flex" justifyContent="space-between">
+          <Rating size="small" value={Number(place.rating)} readOnly />
+          <Typography gutterBottom variant="subtitle1">
+            out of {place.num_reviews} reviews
+          </Typography>
+        </Box>
         <Box display="flex" justifyContent="space-between">
           <Typography variant="subtitle1">Price</Typography>
           <Typography gutterBottom variant="subtitle1">
